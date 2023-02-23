@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  border-radius: 2cm;
+  background-color:plum;
+
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 75%;
+  font-size: 18px;
+  border-radius: 2cm;
+
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+  color: black;
+  background-color:orangered;
+  width: 100%;
+  border-radius: 0.3cm;
+
+}
+
+.parallax {
+  background-image: url("image2.jpg");
+  min-height: 500px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+button {
+  margin: 20px 0;
+  line-height: 34px;
+  position: relative;
+  cursor: pointer;
+  outline:none !important;
+  width:100%;
+}
+
+button:active {
+
+  outline:none;
+}
+
+button.ribbon {
+  
+  outline:none;
+  outline-color: transparent;
+}
+button.ribbon:before, button.ribbon:after {
+  top: 3px;
+  border-color: #53dab6 #53dab6 #53dab6 transparent;
+  border-width: 24px;
+}
+button.ribbon:before {
+  left: -25px;
+}
+button.ribbon:after {
+  right: -25px;
+}
+
+button:before, button:after {
+  content: '';
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-style: solid;
+  border-width: 0;
+  outline:none;
+}
+
+button.btn-default:before {
+  border-color: #757575 #757575 #757575 transparent;
+    }
+    button.btn-default:after {
+  border-color: #757575 transparent #757575 #757575;
+    }
+    
+    .btn{
+      animation: btn;
+      animation-duration: 15s;
+animation-iteration-count: infinite;
+    }
+
+@keyframes btn{
+  from
+  {
+    transform: translateX(500px);
+  }
+  to{
+    transform: translateX(-150px);
+
+  }
+  
+}
+#flip {
+  height:30px;
+  overflow: hidden;
+}
+#flip > div > div {
+  color:#fff;
+  padding:4px 12px;
+  height:45px;
+  margin-bottom:45px;
+  display:inline-block;
+}
+
+#flip div:first-child {
+  animation: show 5s linear infinite;
+}
+
+#flip div div {
+  background:#42c58a;
+}
+#flip div:first-child div {
+  background:#4ec7f3;
+}
+#flip div:last-child div {
+  background:#DC143C;
+}
+
+@keyframes show {
+  0% {margin-top:-270px;}
+  5% {margin-top:-180px;}
+  33% {margin-top:-180px;}
+  38% {margin-top:-90px;}
+  66% {margin-top:-90px;}
+  71% {margin-top:0px;}
+  99.99% {margin-top:0px;}
+  100% {margin-top:-270px;}
+}
+
+
+
+
+
+
+
+.box {
+  Padding: 0.5cm ;
+  Height: 100%;
+}
+
+.container {
+  Font-Family: "PT Sans", Sans-Serif;
+  Width: 50%;
+  Margin: Auto;
+}
+
+.container Ul.Rb {
+  Margin: 1cm ;
+  Padding: 0;
+}
+
+.container Ul.Rb Li {
+  List-Style: None;
+  Margin: Auto;
+  Margin-Left: 1cm;
+  Border-Left: 1px Dashed black;
+  Padding: 0 0 50px 50px;
+  Position: Relative;
+}
+
+.container Ul.Rb Li:last-Child {
+  Border-Left: 0;
+}
+
+.container Ul.Rb Li::Before {
+  Position: Absolute;
+  Left: -18px;
+  Top: -5px;
+  Content: " ";
+  Border: 8px Solid white;
+  Border-Radius: 100%;
+  Background: #50d890;
+  Height: 20px;
+  Width: 20px;
+  Transition: All 1s Ease-In-Out;
+}
+
+.container Ul.Rb Li:hover::Before {
+  Border-Color: #232931;
+  Transition: All 2s Ease-In-Out;
+}
+
+Ul.Rb Li .Timestamp {
+  Color: #50d890;
+  Position: Relative;
+  Width: 100px;
+  Font-Size: 12px;
+}
+.PARA{
+  background-color: orange;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 500px;
+  font-family:sans-serif;
+
+
+  animation: btn;
+      animation-duration: 15s;
+animation-iteration-count: infinite;
+    }
+
+@keyframes btn{
+  from
+  {
+    transform: translateX(500px);
+  }
+  to{
+    transform: translateX(-150px);
+
+  }
+
+}
+
+
+
+
+
+
+</style>
+</head>
+<body>
+
+
+<div class="card">
+  <img src="image2.jpg" alt="KAUSALYA" style="width:40% ; border-radius:5cm
+  ">
+  <h1>KAUSALYA G</h1>
+  <div id=flip>
+    <div><div>WEB DEVELOPER</div></div>
+    <div><div>WEB DEVELOPER</div></div>
+    <div><div>WEB DEVELOPER</div></div>
+  </div>
+  <p>-REACT</p>
+  <div style="margin: 24px 0;">
+    <a href="#"><i class="fa fa-dribbble"></i></a> 
+    <a href="#"><i class="fa fa-twitter"></i></a>  
+    <a href="#"><i class="fa fa-linkedin"></i></a>  
+    <a href="#"><i class="fa fa-facebook"></i></a> 
+  </div>
+  <p><button ID="CONTACT">Contact
+    <script> 
+    function contact(){
+    alert
+      ("email:kkausalya19@gmail.com");}
+      </script>
+      <input type=" button" onclick="contact()" value=" email">
+
+  </button></p>
+</div>
+<div class="parallax">
+
+  <button style="background-color:#DC143C;"> 
+    <h1 style="  text-align: center;">OBJECTIVE</h1></BR>
+    seeking a challanging position in a reputed organization where i can learn new skills , expand my knowledge and leverage my learningsand wish to express my innovative skills for self and company growth </BR></BR></button>
+  </BR></BR>
+  </div>
+<h1 style="  text-align: center;">SKILLS</h1>
+
+<div class=" btn row">
+    
+  <div class="btn">   
+    
+<button style="width:25%;border-radius:1cm" type="button" class="btn btn-default ribbon">HTML</button></br>
+<button style= "width:25%;border-radius:1cm" type="button" class="btn btn-default ribbon">CSS</button></br>
+<button style= "width:25%;border-radius:1cm" type="button" class="btn btn-default ribbon">BOOTSTRAP</button></br>
+<button style= "width:25%;border-radius:1cm" type="button" class="btn btn-default ribbon">JAVASCRIPT</button></br>
+<button style= "width:25%;border-radius:1cm" type="button" class="btn btn-default ribbon">PHP</button></br>
+<button style= "width:25%;border-radius:1cm" type="button" class="btn btn-default ribbon">REACT</button></br>
+
+</div></div>
+
+<h1 style="  text-align: center;">EDUCATION</h1>
+
+<Div Class="box">
+  <Div Class="container">
+      <Ul Class="Rb">
+          <Li Class="Rb-Item" >
+              <Div Class="Timestamp">
+                  2013<Br> 10 std
+              </Div>
+              <Div Class="Item-Title">ST.IGNATIOUS CONVENT</Div>
+
+          </Li>
+          <Li Class="Rb-Item" >
+              <Div Class="Timestamp">
+                  2015<Br> 12 std
+              </Div>
+              <Div Class="Item-Title">ST.IGNATIOUS CONVENT</Div>
+
+          </Li>
+
+          <Li Class="Rb-Item" >
+              <Div Class="Timestamp">
+                  2018<Br> B.Sc(physics)
+              </Div>
+              <Div Class="Item-Title">MANONMANIUM SUNDARANAR UNIVERSITY</Div>
+          </Li>
+
+
+          <Li Class="Rb-Item">
+            <Div Class="Timestamp">
+                2020<Br> M.Sc(physics)
+            </Div>
+            <Div Class="Item-Title">MANONMANIUM SUNDARANAR UNIVERSITY</Div>
+        </Li>
+
+      </Ul>
+
+  </Div>
+</Div>
+</Div>
+<h1 style="  text-align: center;">STRENGTH</h1>
+<div class="PARA">
+<p>Work with positive additude</p></div>
+<div class="PARA">
+<p>Self confidence</p></div>
+<h1 style="  text-align: center;">SPECIAL MENTION </h1>
+<div class="PARA">
+<p> Had been ASSOCIATION SECRETTARY for the department of physics </p>
+</div>
+</body>
+</html>
