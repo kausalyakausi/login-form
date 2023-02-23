@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+    Margin: 0;
+    Padding: 0;
+    Box-Sizing: Border-Box;
+    Font-Family:  Sans-Serif;
+}
+Section {
+    Display: Flex;
+    Min-Height: 100vh;
+    Align-Items: Center;
+    Justify-Content: Center;
+}
+
+Section .Colour {
+    Position: Absolute;
+    Filter: Blur(150px);
+}
+
+Section .Colour:nth-Child(1) {
+    Top: -350px;
+    Width: 600px;
+    Height: 600px;
+    Background: #Bf4ad4;
+}
+
+Section .Colour:nth-Child(2) {
+    Left: 100px;
+    Width: 500px;
+    Height: 500px;
+    Bottom: -150px;
+    Background: #Ffa500;
+}
+
+Section .Colour:nth-Child(3) {
+    Right: 100px;
+    Bottom: 50px;
+    Width: 300px;
+    Height: 300px;
+    Background: #2b67f3;
+}
+
+.Box {
+    Position: Relative;
+}
+
+.Box .Square {
+    Position: Absolute;
+    Border-Radius: 10px;
+    Animation: Animate 10s Linear Infinite;
+    Box-Shadow: 0 25px 25px rgb(202, 130, 130);
+    Border: 1px Solid white;
+}
+
+@Keyframes Animate {
+
+    from {
+        Transform: TranslateY(-40px);
+    }
+
+    to {
+        Transform: TranslateY(40px);
+    }
+}
+
+.Box .Square:nth-Child(1) {
+    Top: -50px;
+    Left: -60px;
+    Width: 100px;
+    Height: 100px;
+}
+
+.Box .Square:nth-Child(2) {
+    Top: 150px;
+    Left: -100px;
+    Width: 120px;
+    Height: 120px;
+}
+
+.Box .Square:nth-Child(3) {
+    Width: 80px;
+    Height: 80px;
+    Right: -50px;
+    Bottom: -60px;
+}
+
+.Box .Square:nth-Child(4) {
+    Left: 100px;
+    Width: 50px;
+    Height: 50px;
+    Bottom: -80px;
+}
+
+.Box .Square:nth-Child(5) {
+    Top: -80px;
+    Left: 140px;
+    Width: 60px;
+    Height: 60px;
+}
+
+.Container {
+    Width: 450px;
+    Display: Flex;
+    Position: Relative;
+    Border-Radius: 10px;
+    Align-Items: Center;
+    Justify-Content: Center;
+    Box-Shadow: 0 25px 45px rgb(202, 130, 130);
+    Border: 1px Solid white;
+}
+
+.Form {
+    Width: 100%;
+    Height: 100%;
+    Padding: 40px;
+}
+
+.Form H2 {
+    Color: white;
+    Font-Size: 24px;
+    Font-Weight: 600;
+    Position: Relative;
+    Letter-Spacing: 1px;
+    Margin-Bottom: 40px;
+}
+
+.Form H2::Before {
+    Left: 0;
+    Width: 150px;
+    Height: 4px;
+    Content: "";
+    Bottom: -10px;
+    Background: rgb(197, 8, 40);
+    Position: Absolute;
+}
+
+.Form .inputbox {
+    Width: 100%;
+    Margin-Top: 20px;
+}
+
+.Form .inputbox Input {
+    Width: 100%;
+    Color: rgb(17, 15, 15);
+    Border: None;
+    Outline: None;
+    Font-Size: 16px;
+    Padding: 10px 20px;
+    Letter-Spacing: 1px;
+    Border-Radius: 35px;
+    Background: Rgba(255, 255, 255, 0.1);
+    Border: 1px Solid Rgba(255, 255, 255, 0.5);
+  
+}
+
+.Form::Placeholder {
+    Color: white;
+}
+
+
+.Forget {
+    Color: rgb(10, 9, 9);
+    font-weight: 800;
+    Margin-Top: 5px;
+}
+
+.Forget A {
+    Color: rgb(182, 105, 105);
+    Font-Weight: 800;
+    Text-Decoration: None;
+}
+    </style>
+
+<body>
+    <Section>
+    <Div Class="Colour"></Div>
+    <Div Class="Colour"></Div>
+    <Div Class="Colour"></Div>
+    <Div Class="Box">
+        <Div Class="Square" ></Div>
+        <Div Class="Square" ></Div>
+        <Div Class="Square" ></Div>
+        <Div Class="Square" ></Div>
+        <Div Class="Square" ></Div>
+        <Div Class="Container">
+            <Div Class="Form">
+                <H2>Login Form</H2>
+                <Form>
+                    <Div Class="inputbox">
+                        <Input Type="Text" Placeholder="Username" />
+                    </Div>
+                    <Div Class="inputbox">
+                        <Input Type="Password" Placeholder="Password" />
+                    </Div>
+                    <Div Class="inputbox">
+                        <script> 
+                            function login(){
+                            alert
+                              ("you have successfully logined into this page");}
+                              </script>
+                              <input type=" submit"style="width:4cm;background-color:red;color:white;Cursor:pointer;" onclick="login()" value=" login">
+                        
+                    </Div>
+                    <P Class="Forget">
+                        Forgot Password? <A Href="#">Click Here</A>
+                    </P>
+                    <P Class="Forget">
+                        Don't Have An Account? <A Href="#">Sign Up</A>
+                    </P>
+                </Form>
+            </Div>
+        </Div>
+    </Div>
+</Section>
+</body>
+</html>
